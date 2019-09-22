@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MyPlacesLib</string>
+    <string name="search_place">Search Place</string>
+    <string name="no_search_found">No search results found</string>
+    <string name="enter_valid_api_key">Please enter a valid API key</string>
 </resources>
