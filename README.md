@@ -1,6 +1,6 @@
 ## AndroidX Compatible
 
-## MyPLaces
+# MyPlaces
 
 An android library which contains the google's place autocomplete API implementation, along with some UI and customization options.
 
