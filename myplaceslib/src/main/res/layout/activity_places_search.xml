@@ -53,9 +53,9 @@
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:maxLength="120"
-                android:textSize="15sp"
                 android:textColor="@color/colorMainFont"
-                android:textColorHint="#ccc" />
+                android:textColorHint="#ccc"
+                android:textSize="15sp" />
 
             <ImageView
                 android:id="@+id/imgClearSearch"
@@ -98,13 +98,13 @@
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="32dp"
-        android:visibility="gone"
         android:layout_height="32dp"
-        android:indeterminate="true"
         android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorMainFont"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:indeterminateTint="@color/colorMainFont"
         app:layout_constraintTop_toBottomOf="@+id/cardSearch" />
 
     <ImageView
@@ -116,5 +116,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressPlaceDetails"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:indeterminate="true"
+        android:padding="6dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

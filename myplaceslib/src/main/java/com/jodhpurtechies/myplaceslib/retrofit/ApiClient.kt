@@ -2,10 +2,12 @@ package com.jodhpurtechies.myplaceslib.retrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.converter.scalars.ScalarsConverterFactory
 
 
 class ApiClient{
     private val mRetrofit:Retrofit = Retrofit.Builder()
+        .addConverterFactory(ScalarsConverterFactory.create())
         .addConverterFactory(MoshiConverterFactory.create())
         .baseUrl(Api.BASE_URL)
         .build()

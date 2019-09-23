@@ -1,7 +1,6 @@
 package com.jodhpurtechies.myplaceslib.retrofit
 
 import com.jodhpurtechies.myplaceslib.model.PlaceResult
-import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -22,4 +21,11 @@ interface Api{
                          @Query("radius") radius:String="",
                          @Query("location") nearby:String=""
     ):Call<PlaceResult>
+
+    @GET(value = "place/details/json?")
+    fun getPlaceDetails(@Query("key") key:String,
+                         @Query("place_id") placeId:String,
+                         @Query("sessiontoken") sessionToken:String= uniqueId
+    ):Call<String>
+
 }

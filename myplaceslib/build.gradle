@@ -57,6 +57,9 @@ dependencies {
     //moshi converter
     implementation "com.squareup.retrofit2:converter-moshi:2.4.0"
 
+    //scalar converter
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
     //data binding specific for kotlin
     kapt 'com.android.databinding:compiler:3.1.4'
 

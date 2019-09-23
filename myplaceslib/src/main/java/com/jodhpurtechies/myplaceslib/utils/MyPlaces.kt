@@ -11,9 +11,10 @@ import com.jodhpurtechies.myplaceslib.view.PlacesSearchActivity
 object MyPlaces {
 
     const val TAG_ERR = "ErrorMyPlaces"
-    private const val API_ERR_MSG = "Please call MyPlaces.initialize(\"YOUR_API_KEY\") first"
+    private const val API_ERR_MSG = "Please enter a valid API key"
+    const val API_ERR_MSG_DETAILS = "Oops! Invalid place_id found"
     const val REQUEST_CODE_PLACE_SEARCH=2909
-    const val PREDICTION_RESULT="PredictionResult"
+    const val MY_PLACE_RESULT="PlaceResult"
 
     //config values for customization
     var typeface: Typeface? = null

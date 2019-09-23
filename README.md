@@ -62,11 +62,24 @@ Then, in your onActivityResult method of your activity:
 ```
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(resultCode== Activity.RESULT_OK && requestCode==MyPlaces.REQUEST_CODE_PLACE_SEARCH){
-            val predictionResult=data?.extras?.getSerializable(MyPlaces.PREDICTION_RESULT) as PredictionModel?
-            Log.d("Prediction",""+predictionResult?.placeId+" - "+predictionResult?.placeAddress)
+        if (resultCode == Activity.RESULT_OK && requestCode == MyPlaces.REQUEST_CODE_PLACE_SEARCH) {
+            val placeResult = data?.extras?.getSerializable(MyPlaces.MY_PLACE_RESULT) as PlaceModel?
+            
+            //Now with this placeResult, you can access its placeId, name, address, lat, lng etc
+            
+            //placeResult?.placeName
+            //placeResult?.placeAddress
+            
+            /*Log.d("Place", "PlaceId: ${placeResult?.placeId}"
+                        + "\nPlaceName: ${placeResult?.placeName}"
+                        + "\nPlaceAddress: ${placeResult?.placeAddress}"
+                        + "\nPlaceLatLng: ${placeResult?.placeLat},${placeResult?.placeLng}"
+                        + "\nPlacePhone: ${placeResult?.placePhoneNo}"
+                        + "\nPlaceWebsite: ${placeResult?.placeWebsite}"
+                        + "\nPlaceRating: ${placeResult?.placeRating}"
+            )*/
         }
-}
+    }
 ```
 
-Thats it, Happy Coding
+That's it, Happy Coding

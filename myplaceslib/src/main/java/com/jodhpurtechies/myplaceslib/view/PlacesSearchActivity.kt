@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
@@ -104,7 +105,7 @@ class PlacesSearchActivity : AppCompatActivity() {
             strNearbyLocation = if (MyPlaces.nearbyLocation != null) MyPlaces.nearbyLocation!!.trim() else ""
         ).observe(this, Observer { placeResult ->
             if (placeResult != null) {
-                if (placeResult.isOK()) {
+                if (placeResult.isOK() || placeResult.isZeroResult()) {
                     val arrayPredictions = placeResult.predictions as ArrayList<PredictionModel>?
                     if (arrayPredictions != null && arrayPredictions.isNotEmpty()) {
                         linNoRecordFound.isVisible = false
@@ -131,11 +132,27 @@ class PlacesSearchActivity : AppCompatActivity() {
     }
 
     private fun onPlaceClicked(pos: Int, arrayPredictions: ArrayList<PredictionModel>) {
-        val intent = Intent().also {
-            it.putExtra(MyPlaces.PREDICTION_RESULT, arrayPredictions[pos])
+        fetchPlaceDetails(arrayPredictions[pos].placeId ?: "")
+    }
+
+    private fun fetchPlaceDetails(strPlaceId: String) {
+        if (strPlaceId.trim().isEmpty()) {
+            Toast.makeText(applicationContext, MyPlaces.API_ERR_MSG_DETAILS, Toast.LENGTH_SHORT)
+                .show()
+            return
         }
-        setResult(RESULT_OK, intent)
-        finish()
+
+        progressPlaceDetails.isVisible = true
+        viewModel.getPlaceDetails(strPlaceId).observe(this, Observer { placeModel ->
+            progressPlaceDetails.isVisible = false
+            if (placeModel != null) {
+                val intent = Intent().also {
+                    it.putExtra(MyPlaces.MY_PLACE_RESULT, placeModel)
+                }
+                setResult(RESULT_OK, intent)
+                finish()
+            }
+        })
     }
 
     private fun setColorSearch(colorRes: Int) {
