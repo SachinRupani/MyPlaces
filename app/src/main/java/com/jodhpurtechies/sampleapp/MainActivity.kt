@@ -27,8 +27,8 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode== Activity.RESULT_OK && requestCode==MyPlaces.REQUEST_CODE_PLACE_SEARCH){
-            val predictionModel=data?.extras?.getSerializable(MyPlaces.PREDICTION_RESULT) as PredictionModel?
-            Log.d("PredictionClicked",""+predictionModel)
+            val predictionResult=data?.extras?.getSerializable(MyPlaces.PREDICTION_RESULT) as PredictionModel?
+            Log.d("Prediction",""+predictionResult?.placeId+" - "+predictionResult?.placeAddress)
         }
     }
 }
