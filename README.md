@@ -1,6 +1,6 @@
 ## AndroidX Compatible
 
-# Screenshots
+## Screenshots
 
 <img width="360" height="640" src="images/screen_2.png" alt="Screenshot2" >
 
