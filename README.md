@@ -40,7 +40,7 @@ Now to use the library in your app:
 ## Basic
 
 ```
-MyPlaces.with("AIzaXXXXXXXXXXXXXXXXXXXXXX")
+MyPlaces.with("AIzaXXXXXXXXXXXXXXXXXXXXXX") //Your Google API key
             .startSearch(this)
 ```
 
