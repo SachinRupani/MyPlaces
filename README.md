@@ -35,7 +35,7 @@ dependencies {
 
 # Implementation
 
-Now to use the library in your app:
+Now to use the library in your app, write the following code in your activity:
 
 ## Basic
 
