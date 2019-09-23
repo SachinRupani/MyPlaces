@@ -2,11 +2,9 @@
 
 #Screenshots
 
-```
-<img src="images/Screen_1.png" alt="Screenshot1" />
-<img src="images/Screen_2.png" alt="Screenshot2" />
-<img src="images/Screen_3.png" alt="Screenshot3" />
-```
+<img src="images/screen_1.png" alt="Screenshot1" >
+<img src="images/screen_2.png" alt="Screenshot2" >
+<img src="images/screen_3.png" alt="Screenshot3" >
 
 # MyPlaces
 
