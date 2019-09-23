@@ -14,9 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        MyPlaces.with("AIzaXXXXXXXXXXXXXXXXXXXXXX")
+            .startSearch(this)
+
         MyPlaces.with("AIzaXXXXXXXXXXXXXXXXXXXXXX") //Your Google API key
             //.setTextTypeFace(Typeface.createFromAsset(assets, "Ubuntu-Medium.ttf")) //
-            //.setLocationIcon(R.mipmap.ic_launcher) //For changing the default location icon
+            //.setLocationIcon(R.drawable.ic_location) //For changing the default location icon
             //.setNearbyLocation(lat = 28.7041, lng = 77.1025) //For getting results according to a specific lat lng
             //.setCountry("in") //For country specific results, refer to country codes
             //.setBackgroundListItem(android.R.color.transparent) //For changing the default list item background resource
