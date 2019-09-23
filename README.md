@@ -2,9 +2,7 @@
 
 #Screenshots
 
-<img width="360" src="images/screen_1.png" alt="Screenshot1" >
-<img width="360" src="images/screen_2.png" alt="Screenshot2" >
-<img width="360" src="images/screen_3.png" alt="Screenshot3" >
+<img width="360" height="640" src="images/screen_2.png" alt="Screenshot2" >
 
 # MyPlaces
 
