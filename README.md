@@ -1,5 +1,13 @@
 ## AndroidX Compatible
 
+#Screenshots
+
+```
+<img src="images/Screen_1.png" alt="Screenshot1" />
+<img src="images/Screen_2.png" alt="Screenshot2" />
+<img src="images/Screen_3.png" alt="Screenshot3" />
+```
+
 # MyPlaces
 
 An android library which contains the google's place autocomplete API implementation, along with some UI and customization options.
