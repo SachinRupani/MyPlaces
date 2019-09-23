@@ -1,10 +1,10 @@
-##AndroidX Compatible
+## AndroidX Compatible
 
-##MyPLaces
+## MyPLaces
 
 An android library which contains the google's place autocomplete API implementation, along with some UI and customization options.
 
-#Installation
+# Installation
 
 In your project level build.gradle file:
 
@@ -23,7 +23,7 @@ Then in your app level build.gradle file:
 ```
 android {
 	dataBinding {
-		enabled = true
+	   enabled = true
 	}
 }
 
@@ -33,7 +33,7 @@ dependencies {
 
 ```
 
-#Implementation
+# Implementation
 
 Now to use the library in your app:
 
