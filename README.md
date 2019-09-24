@@ -6,7 +6,7 @@ An android library which contains the google's place autocomplete API implementa
 
 ### Screenshots
 
-<img width="360" height="650" src="images/places_image_gif.gif" alt="Image" >
+<img width="360" height="640" src="images/myplaces_media.mp4" alt="Image" >
 
 
 ## Installation
