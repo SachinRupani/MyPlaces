@@ -1,14 +1,15 @@
-## AndroidX Compatible Only*
-
-## Screenshots
-
-<img width="360" height="640" src="images/places_image_gif.gif" alt="Screenshot2" >
-
 # MyPlaces
 
 An android library which contains the google's place autocomplete API implementation, along with some UI and customization options.
 
-# Installation
+### AndroidX Compatible Only*
+
+### Screenshots
+
+<img width="360" height="640" src="images/places_image_gif.gif" alt="Image" >
+
+
+## Installation
 
 In your project level build.gradle file:
 
@@ -32,23 +33,23 @@ android {
 }
 
 dependencies {
-	implementation 'com.github.SachinRupani:MyPlaces:1.0.1-alpha'
+	implementation 'com.github.SachinRupani:MyPlaces:1.0.2-alpha'
 }
 
 ```
 
-# Implementation
+## Implementation
 
 Now to use the library in your app, write the following code in your activity:
 
-## Basic
+### Basic
 
 ```
 MyPlaces.with("AIzaXXXXXXXXXXXXXXXXXXXXXX") //Your Google API key
             .startSearch(this)
 ```
 
-## Customization
+### Customization
 
 ```
 MyPlaces.with("AIzaXXXXXXXXXXXXXXXXXXXXXX") //Your Google API key
