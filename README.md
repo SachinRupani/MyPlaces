@@ -1,8 +1,8 @@
-## AndroidX Compatible
+## AndroidX Compatible Only*
 
 ## Screenshots
 
-<img width="360" height="640" src="images/screen_2.png" alt="Screenshot2" >
+<img width="360" height="640" src="images/places_image_gif.gif" alt="Screenshot2" >
 
 # MyPlaces
 
