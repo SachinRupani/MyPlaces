@@ -2,11 +2,11 @@
 
 An android library which contains the google's place autocomplete API implementation, along with some UI and customization options.
 
-### AndroidX Compatible Only*
+### **AndroidX Compatible Only**
 
 ### Screenshots
 
-<img width="360" height="640" src="images/places_image_gif.gif" alt="Image" >
+<img width="360" height="650" src="images/places_image_gif.gif" alt="Image" >
 
 
 ## Installation
