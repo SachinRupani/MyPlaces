@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-	implementation 'com.github.SachinRupani:MyPlaces:1.0.2-alpha'
+	implementation 'com.github.SachinRupani:MyPlaces:1.0.0-beta'
 }
 
 ```
